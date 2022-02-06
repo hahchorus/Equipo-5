@@ -321,4 +321,4 @@ public class Expendedora extends JFrame{
 		setDefaultCloseOperation(EXIT_ON_CLOSE);//cierra procesos cuando se cierra la ventana
 		//Avence Arisbeth TERMINA---------------
 	} 
-}
+}2d2
