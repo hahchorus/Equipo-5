@@ -232,6 +232,10 @@ public class GestionBoton implements ActionListener {
             maquina.produ.setIcon(new ImageIcon(maquina.ima19.getImage().getScaledInstance(120, 130, Image.SCALE_DEFAULT)));
             maquina.produ.setBounds(70,15,120,130);
             maquina.p2.add(maquina.produ);
+            maquina.caja2.setText("0");
+            maquina.caja3.setText("0");
+            maquina.caja5.setText("0");
+            maquina.caja1.setText("");
         }
 
     }

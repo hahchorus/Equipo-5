@@ -110,7 +110,10 @@ public class Expendedora extends JFrame{
 		pago.setForeground(Color.RED);
 		cambio.setForeground(Color.RED);
 		signo.setForeground(Color.RED);
-
+		caja1.setEditable(false);
+		caja2.setEnabled(false);
+		caja3.setEnabled(false);
+		caja5.setEnabled(false);
 		//Avances Horus Inicia (termina 117)
 		//Creacion de etiquetas (codigos y precios)
 		JLabel codiBarritas = new JLabel("A1   $13",SwingConstants.CENTER);//Creacion de etiqueta y centrar texto
@@ -126,18 +129,18 @@ public class Expendedora extends JFrame{
 		JLabel codiPinguinos = new JLabel("C3   $9",SwingConstants.CENTER);
 		JLabel coditriki = new JLabel("C4   $9",SwingConstants.CENTER);
 		//Edicion de fuente de codigos y precios
-		codiBarritas.setFont(new Font("time new roman",Font.BOLD, 15));
-		codiChips.setFont(new Font("time new roman",Font.BOLD, 15));
-		codiCoca.setFont(new Font("time new roman",Font.BOLD, 15));
-		codiCremax.setFont(new Font("time new roman",Font.BOLD, 15));
-		codiGomitas.setFont(new Font("time new roman",Font.BOLD, 15));
-		codiHot.setFont(new Font("time new roman",Font.BOLD, 15));
-		codiJugo.setFont(new Font("time new roman",Font.BOLD, 15));
-		codiKid.setFont(new Font("time new roman",Font.BOLD, 15));
-		codiMamut.setFont(new Font("time new roman",Font.BOLD, 15));
-		codiPanditas.setFont(new Font("time new roman",Font.BOLD, 15));
-		codiPinguinos.setFont(new Font("time new roman",Font.BOLD, 15));
-		coditriki.setFont(new Font("time new roman",Font.BOLD, 15));
+		codiBarritas.setFont(new Font("time new roman",Font.BOLD, 12));
+		codiChips.setFont(new Font("time new roman",Font.BOLD, 12));
+		codiCoca.setFont(new Font("time new roman",Font.BOLD, 12));
+		codiCremax.setFont(new Font("time new roman",Font.BOLD, 12));
+		codiGomitas.setFont(new Font("time new roman",Font.BOLD, 12));
+		codiHot.setFont(new Font("time new roman",Font.BOLD, 12));
+		codiJugo.setFont(new Font("time new roman",Font.BOLD, 12));
+		codiKid.setFont(new Font("time new roman",Font.BOLD, 12));
+		codiMamut.setFont(new Font("time new roman",Font.BOLD, 12));
+		codiPanditas.setFont(new Font("time new roman",Font.BOLD, 12));
+		codiPinguinos.setFont(new Font("time new roman",Font.BOLD, 12));
+		coditriki.setFont(new Font("time new roman",Font.BOLD, 12));
 		//Cambio de color de la fuente
 		codiBarritas.setForeground(Color.RED);
 		codiChips.setForeground(Color.RED);
@@ -165,7 +168,7 @@ public class Expendedora extends JFrame{
 		mamut.setIcon(new ImageIcon(ima9.getImage().getScaledInstance(120, 130, Image.SCALE_DEFAULT)));
 		panditas.setIcon(new ImageIcon(ima10.getImage().getScaledInstance(120, 130, Image.SCALE_DEFAULT)));
 		pinguinos.setIcon(new ImageIcon(ima11.getImage().getScaledInstance(120, 130, Image.SCALE_DEFAULT)));
-		trikitrakets.setIcon(new ImageIcon(ima12.getImage().getScaledInstance(120, 130, Image.SCALE_DEFAULT)));
+		trikitrakets.setIcon(new ImageIcon(ima12.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT)));
 		//Se escala la imagen a el tamaño del boton (Dinero)
 		peso1.setIcon(new ImageIcon(ima13.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT)));
 		peso2.setIcon(new ImageIcon(ima14.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT)));
@@ -204,12 +207,12 @@ public class Expendedora extends JFrame{
 		cremax.setBounds(305, 70, 120, 130);
 		gomitas.setBounds(20, 240, 120, 130);
 		cacahuate.setBounds(115, 240, 120, 130);
-		jugo.setBounds(230, 240, 120, 130);
+		jugo.setBounds(210, 240, 120, 130);
 		kidkad.setBounds(315, 240, 120, 130);
 		mamut.setBounds(30, 410, 120, 130);
 		panditas.setBounds(130, 410, 120, 130);
 		pinguinos.setBounds(225, 410, 120, 130);
-		trikitrakets.setBounds(305, 410, 120, 130);
+		trikitrakets.setBounds(320, 430, 100, 100);
 		//Posicionar etiquetas en el panel (codigo, precio)
 		codiBarritas.setBounds(55, 200, 55, 12);
 		codiChips.setBounds(150, 200, 55, 12);
@@ -222,7 +225,7 @@ public class Expendedora extends JFrame{
 		codiMamut.setBounds(50, 540, 55, 12);
 		codiPanditas.setBounds(150, 540, 55, 12);
 		codiPinguinos.setBounds(245, 540, 55, 12);
-		coditriki.setBounds(345, 540, 55, 12);
+		coditriki.setBounds(345, 540, 50, 10);
 		//Posicionar los botones en el panel
 		ba.setBounds(550, 180, 50, 50);
 		bb.setBounds(550, 235, 50, 50);
