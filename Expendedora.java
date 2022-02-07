@@ -25,6 +25,7 @@ public class Expendedora extends JFrame{
 	JLabel pinguinos = new JLabel();
 	JLabel trikitrakets = new JLabel();
 	JLabel coca = new JLabel();
+	JLabel produ = new JLabel();
 
 	//Se le asigna a una variable un imagen
 	ImageIcon ima1 = new ImageIcon("imagenes/barritas.png");
@@ -45,6 +46,7 @@ public class Expendedora extends JFrame{
 	ImageIcon ima16 = new ImageIcon("imagenes/diez.png");
 	ImageIcon ima17 = new ImageIcon("imagenes/veinte.png");
 	ImageIcon ima18 = new ImageIcon("imagenes/cincuenta.png");
+	ImageIcon ima19 = new ImageIcon("imagen19.jpg");
 
 	//Creacion de botones
 	//Botones de codigo
@@ -58,14 +60,14 @@ public class Expendedora extends JFrame{
 	JButton ok = new JButton("OK");
 	JButton borrar = new JButton("BORRAR");
 	//Creacion de botones con imagen
-	JButton peso1 = new JButton();
-	JButton peso2 = new JButton();
-	JButton peso5 = new JButton();
-	JButton peso10 = new JButton();
-	JButton peso20 = new JButton();
-	JButton peso50 = new JButton();
+	JButton peso1 = new JButton("P1");
+	JButton peso2 = new JButton("P2");
+	JButton peso5 = new JButton("P5");
+	JButton peso10 = new JButton("P10");
+	JButton peso20 = new JButton("P20");
+	JButton peso50 = new JButton("P50");
 	JButton recoger = new JButton("RECOGER");
-	JButton recoger2 = new JButton("RECOGER");
+	JButton recoger2 = new JButton("RECOGER2");
 	JButton pagar = new JButton("PAGAR");
 
 	//Creacion de los JTextField
@@ -309,6 +311,29 @@ public class Expendedora extends JFrame{
 		p1.add(caja2);
 		p1.add(caja3);
 		p1.add(caja5);
+		//Asignacion de OyenteCodigo
+		GestionBoton accion = new GestionBoton(this);
+
+		ba.addActionListener(accion);
+		bb.addActionListener(accion);
+		bc.addActionListener(accion);
+		b1.addActionListener(accion);
+		b2.addActionListener(accion);
+		b3.addActionListener(accion);
+		b4.addActionListener(accion); 
+		ok.addActionListener(accion);
+
+		peso1.addActionListener(accion);
+		peso2.addActionListener(accion);
+		peso5.addActionListener(accion);
+		peso10.addActionListener(accion);
+		peso20.addActionListener(accion);
+		peso50.addActionListener(accion);
+
+		borrar.addActionListener(accion);
+		pagar.addActionListener(accion);
+		recoger.addActionListener(accion);
+		recoger2.addActionListener(accion);
 		//Asignacion de texto a los cuadros de signos
 		caja2.setText("0");
 		caja5.setText("0");
@@ -321,4 +346,4 @@ public class Expendedora extends JFrame{
 		setDefaultCloseOperation(EXIT_ON_CLOSE);//cierra procesos cuando se cierra la ventana
 		//Avence Arisbeth TERMINA---------------
 	} 
-}2d2
+}
