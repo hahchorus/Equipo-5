@@ -210,6 +210,7 @@ public class GestionBoton implements ActionListener {
             }else if(maquina.pago2 < maquina.pago1 & maquina.pago1 !=0){
                 maquina.caja3.setText(maquina.caja2.getText());
                 maquina.caja2.setText("Ingrese el pago completo");
+               
             }else if(maquina.pago1 == 0){
                 maquina.caja3.setText(maquina.caja2.getText());
                 maquina.caja2.setText("Selecciona un producto");

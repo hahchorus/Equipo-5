@@ -103,6 +103,13 @@ public class Expendedora extends JFrame{
 		pago.setFont(new Font("time new roman", Font.BOLD, 20));
 		cambio.setFont(new Font("time new roman", Font.BOLD, 20));
 		signo.setFont(new Font("time new roman", Font.BOLD, 20));
+		//Tamaño de las letras de JButton
+		peso1.setFont(new Font("time new roman", Font.BOLD, 0));
+		peso2.setFont(new Font("time new roman", Font.BOLD, 0));
+		peso5.setFont(new Font("time new roman", Font.BOLD, 0));
+		peso10.setFont(new Font("time new roman", Font.BOLD, 0));
+		peso20.setFont(new Font("time new roman", Font.BOLD, 0));
+		peso50.setFont(new Font("time new roman", Font.BOLD, 0));	
 		//Cambio de color de la fuente
 		principal.setForeground(Color.RED);
 		codigo.setForeground(Color.RED);
@@ -174,8 +181,8 @@ public class Expendedora extends JFrame{
 		peso2.setIcon(new ImageIcon(ima14.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT)));
 		peso5.setIcon(new ImageIcon(ima15.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT)));
 		peso10.setIcon(new ImageIcon(ima16.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT)));
-		peso20.setIcon(new ImageIcon(ima17.getImage().getScaledInstance(110, 60, Image.SCALE_DEFAULT)));
-		peso50.setIcon(new ImageIcon(ima18.getImage().getScaledInstance(110, 60, Image.SCALE_DEFAULT)));
+		peso20.setIcon(new ImageIcon(ima17.getImage().getScaledInstance(100, 50, Image.SCALE_DEFAULT)));
+		peso50.setIcon(new ImageIcon(ima18.getImage().getScaledInstance(100, 50, Image.SCALE_DEFAULT)));
 		//Edicion de funte de boton
 		ba.setFont(new Font("time new roman", Font.BOLD, 15));
 		bb.setFont(new Font("time new roman", Font.BOLD, 15));
@@ -233,7 +240,7 @@ public class Expendedora extends JFrame{
 		ok.setBounds(550, 345, 50, 50);
 		b1.setBounds(605, 180, 50, 50);
 		b2.setBounds(605, 235, 50, 50);
-		b3.setBounds(605, 290, 50, 50);
+		b3.setBounds(605, 290, 50, 50); 
 		b4.setBounds(605, 345, 50, 50);
 		borrar.setBounds(550, 400, 105, 50);
 		//Posicionar los botones con imagenes 
