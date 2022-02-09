@@ -118,9 +118,9 @@ public class Expendedora extends JFrame{
 		cambio.setForeground(Color.RED);
 		signo.setForeground(Color.RED);
 		caja1.setEditable(false);
-		caja2.setEnabled(false);
-		caja3.setEnabled(false);
-		caja5.setEnabled(false);
+		caja2.setEditable(false);
+		caja3.setEditable(false);
+		caja5.setEditable(false);
 		//Avances Horus Inicia (termina 117)
 		//Creacion de etiquetas (codigos y precios)
 		JLabel codiBarritas = new JLabel("A1   $13",SwingConstants.CENTER);//Creacion de etiqueta y centrar texto
