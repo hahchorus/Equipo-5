@@ -40,7 +40,7 @@ public class GestionBoton implements ActionListener {
             maquina.caja1.setText(maquina.caja1.getText() + "4");
         }
 
-        if(accion.equals("OK")){
+        if(accion.equals("Ok")){
             switch(maquina.caja1.getText()){
                 case "A1": maquina.caja5.setText("13");
                 break;
