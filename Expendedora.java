@@ -57,7 +57,7 @@ public class Expendedora extends JFrame{
 	JButton b2 = new JButton("2");
 	JButton b3 = new JButton("3");
 	JButton b4 = new JButton("4");
-	JButton ok = new JButton("OK");
+	JButton ok = new JButton("Ok");
 	JButton borrar = new JButton("BORRAR");
 	//Creacion de botones con imagen
 	JButton peso1 = new JButton("P1");
